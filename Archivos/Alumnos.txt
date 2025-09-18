@@ -1,0 +1,10 @@
+1001|Diego|Perez
+1002|Ana|Lopez
+1003|Marcelo|Ruiz
+1004|Alberto|Tania
+1005|Luisa|Alvarez
+1006|Laura|Rodriguez
+1007|Rodrigo|Linch
+1008|Federico|Fernandez
+1009|Avril|Busetti
+1010|Marcela|Lima
