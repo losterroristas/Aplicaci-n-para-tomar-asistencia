@@ -25,7 +25,7 @@ if (file_exists($alumnosFile)) {
 <body>
     <h2>SISTEMA DE ASISTENCIA</h2>
 
-    <form action="GeneraArchivo.php" method="post">
+    <form action="../GeneraArchivo.php" method="post">
         <label for="fecha">Fecha:</label>
         <input type="date" name="fecha" id="fecha" required>
         <br><br>

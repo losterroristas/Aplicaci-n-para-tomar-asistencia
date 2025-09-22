@@ -10,10 +10,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Convertir a formato 
     $fechaLatina = date("d_m_Y", strtotime($fecha));
     $nombreArchivo = $fechaLatina . ".txt";
-    $rutaArchivo = __DIR__ . "/../Archivos/" . $nombreArchivo;
+    $rutaArchivo = __DIR__ . "/Archivos/" . $nombreArchivo;
 
     // Leer alumnos
-    $alumnosFile = __DIR__ . "/../Archivos/Alumnos.txt";
+    $alumnosFile = __DIR__ . "/Archivos/Alumnos.txt";
     $lineas = file($alumnosFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
     $contenido = "Fecha: " . date("d/m/Y", strtotime($fecha)) . PHP_EOL; // encabezado con la fecha
@@ -27,5 +27,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents($rutaArchivo, $contenido);
 
     echo "Archivo generado: " . htmlspecialchars($nombreArchivo);
-    echo "<br><a href='Asistencia.php'>Volver</a>";
+    echo "<br><a href='php/Asistencia.php'>Volver</a>";
 }
